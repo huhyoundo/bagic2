@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2424c9ae4f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="assets/momentom.ico" />
+    <title>Friends</title>
+  </head>
+  <body>
+    <div class="fixedBar">
+      <div class="statusBar">
+        <div class="statusBar__column">
+          <i class="fas fa-signal status-margin"></i>
+          <span class="statusBar__serviceProviderName status-margin"
+            >ElfTel 5G</span
+          >
+          <i class="fas fa-wifi status-margin"></i>
+        </div>
+        <div class="statusBar__column">
+          <span class="statusBar__time">15:20</span>
+        </div>
+        <div class="statusBar__column">
+          <i class="fas fa-ring status-margin"></i>
+          <i class="fas fa-bell status-margin"></i>
+          <span class="statusBar__batteryLevel status-margin">90%</span>
+          <i class="fas fa-battery-full status-margin"></i>
+        </div>
+      </div>
+      <header class="header">
+        <div class="header__column">
+          <span class="header__title">Plan&Quest</span>
+        </div>
+        <div class="header__column">
+          <i class="fas fa-search header-margin"></i>
+          <i class="fas fa-user-plus header-margin"></i>
+          <i class="fas fa-music header-margin"></i>
+          <i class="fas fa-cog header-margin"></i>
+        </div>
+      </header>
+    </div>
+
+    <main class="main">
+      <div class="container" onselectstart="return false">
+        <div class="js-clock">
+          <div class="js-clockTitle">
+            <div class="js-hour"></div>
+            <span>:</span>
+            <div class="js-min"></div>
+            <span>:</span>
+            <div class="js-sec"></div>
+          </div>
+        </div>
+        <div class="js-date date">0000-00-00</div>
+        <form action="" class="js-form form">
+          <input type="text" placeholder="what is the best?" />
+        </form>
+        <h2 class="js-greetings greetings"></h2>
+        <div class="doContainer">
+          <form action="" class="js-toDoForm toDoForm">
+            <input type="text" placeholder="Write a to do" />
+          </form>
+          <div class="icon"><i class="fas fa-trash"></i></div>
+        </div>
+        <ul class="js-toDoList toDoList"></ul>
+        <span class="js-weather weather"></span>
+      </div>
+      <div class="main__friends">
+        <div class="bestFriends">
+          <h5 class="friend-devider">Ad to coin</h5>
+          <div class="friendBox">
+            <div class="friendBox__column">
+              <img
+                src="images/samwise-gamgee.jpg"
+                alt=""
+                class="friendBox__avatar"
+              />
+              <span class="friendBox__name">unlimited chance 6.22-7.10</span>
+            </div>
+            <div class="friendBox__column">
+              <span class="friendBox__comment">50 won</span>
+            </div>
+          </div>
+          <div class="friendBox">
+            <div class="friendBox__column">
+              <img src="images/pippin.jpg" alt="" class="friendBox__avatar" />
+              <span class="friendBox__name">Big Mac 20% off </span>
+            </div>
+            <div class="friendBox__column">
+              <span class="friendBox__comment">20 won</span>
+            </div>
+          </div>
+          <div class="friendBox">
+            <div class="friendBox__column">
+              <img src="images/merry.jpg" alt="" class="friendBox__avatar" />
+              <span class="friendBox__name">Fyber 5days tutoring</span>
+            </div>
+            <div class="friendBox__column">
+              <span class="friendBox__comment">89 won</span>
+            </div>
+          </div>
+        </div>
+        <div class="newFriends">
+          <h5 class="friend-devider">Quest</h5>
+          <div class="friendBox">
+            <div class="friendBox__column">
+              <img src="images/elrond.jpg" alt="" class="friendBox__avatar" />
+              <span class="friendBox__name">Delivery</span>
+              <div class="friendBox__newIcon"><span>N</span></div>
+            </div>
+            <div class="friendBox__column">
+              <span class="friendBox__comment">5.2$ per each</span>
+            </div>
+          </div>
+          <div class="friendBox">
+            <div class="friendBox__column">
+              <img src="images/boromir.jpg" alt="" class="friendBox__avatar" />
+              <span class="friendBox__name">Wedding guest</span>
+              <div class="friendBox__newIcon"><span>N</span></div>
+            </div>
+            <div class="friendBox__column">
+              <span class="friendBox__comment">20$ per hours</span>
+            </div>
+          </div>
+          <div class="friendBox">
+            <div class="friendBox__column">
+              <img src="images/legolas.jpg" alt="" class="friendBox__avatar" />
+              <span class="friendBox__name">Taking care pets</span>
+              <div class="friendBox__newIcon"><span>N</span></div>
+            </div>
+            <div class="friendBox__column">
+              <span class="friendBox__comment">8$ per hours</span>
+            </div>
+          </div>
+          <div class="friendBox">
+            <div class="friendBox__column">
+              <img src="images/gimli.jfif" alt="" class="friendBox__avatar" />
+              <span class="friendBox__name">valunteeer</span>
+              <div class="friendBox__newIcon"><span>N</span></div>
+            </div>
+            <div class="friendBox__column">
+              <span class="friendBox__comment">8000 Gcash per hours</span>
+            </div>
+          </div>
+        </div>
+        <div class="otherFriends">
+          <h5 class="friend-devider">Friends</h5>
+          <div class="friendBox">
+            <div class="friendBox__column">
+              <img src="images/gandalf.jpg" alt="" class="friendBox__avatar" />
+              <span class="friendBox__name">Gandalf</span>
+            </div>
+            <div class="friendBox__column">
+              <span class="friendBox__comment"></span>
+            </div>
+          </div>
+          <div class="friendBox">
+            <div class="friendBox__column">
+              <img src="images/aragorn.jpg" alt="" class="friendBox__avatar" />
+              <span class="friendBox__name">Aragorn</span>
+            </div>
+            <div class="friendBox__column">
+              <span class="friendBox__newIcon">N</span>
+            </div>
+            <div class="friendBox__column">
+              <span class="friendBox__comment">double chance to get Gcash</span>
+            </div>
+          </div>
+          <div class="friendBox">
+            <div class="friendBox__column">
+              <img
+                src="images/tom_bombadil.jpg"
+                alt=""
+                class="friendBox__avatar"
+              />
+              <span class="friendBox__name">Tom Bombadil</span>
+            </div>
+            <div class="friendBox__column">
+              <span class="friendBox__comment"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link"
+            ><i class="fas fpa-user"></i
+          ></a>
+        </li>
+        <li class="nav__list-item">
+          <a href="chats.html" class="nav__list-link nav__list-link-relative"
+            ><i class="far fa-comment"></i>
+            <div class="nav__unread">89</div></a
+          >
+        </li>
+        <li class="nav__list-item">
+          <a href="hashtag.html" class="nav__list-link"
+            ><i class="fas fa-hashtag"></i
+          ></a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link"
+            ><i class="fas fa-ellipsis-h"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen smaller!</span>
+      <script src="date.js"></script>
+      <script src="clock.js"></script>
+      <script src="greeting.js"></script>
+      <script src="todo.js"></script>
+
+      <script src="weather.js"></script>
+    </div>
+  </body>
+</html>

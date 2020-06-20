@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo:700|Comfortaa:600,700|Racing+Sans+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@keyframes containerAnim {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: containerAnim 0.5s ease-in;
+  color: white;
+}
+
+.container .date {
+  font-family: "Arvo", serif;
+  font-size: 180%;
+  text-shadow: 2px 2px 2px rgba(128, 128, 128, 0.466);
+}
+
+.container .js-clock {
+  width: 200px;
+  font-family: "Arvo", serif;
+  font-size: 300%;
+  font-weight: 700;
+  padding: 0px 0px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 2px rgba(128, 128, 128, 0.466);
+}
+
+.js-clock .js-clockTitle {
+  display: flex;
+}
+
+.js-clockTitle span {
+  margin: 0 13px;
+}
+
+.container .doContainer {
+  display: flex;
+}
+
+.doContainer .icon {
+  width: 40px;
+  height: 40px;
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 13px;
+  margin-left: 10px;
+}
+
+.icon i {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.container .form {
+  margin: 30px 0px;
+}
+
+.form input,
+.toDoForm input {
+  width: 300px;
+  font-family: "Racing Sans One", cursive;
+  font-size: 200%;
+  color: #dbdfe9;
+  text-align: center;
+  line-height: 50px;
+  border: none;
+  border-bottom: solid 3px #dbdfe9;
+  background: none;
+  outline: none;
+  transition: transform 0.3s ease-in;
+}
+
+.toDoForm input {
+  margin-left: 43px;
+}
+
+.form input:focus,
+.toDoForm input:focus {
+  color: #dbdfe9;
+  transform: translateY(-10%);
+}
+
+.form input::placeholder,
+.toDoForm input::placeholder {
+  color: #dbdfe9;
+}
+
+.container .greetings {
+  font-family: "Racing Sans One", cursive;
+  font-size: 300%;
+  text-shadow: 2px 2px 2px rgb(189, 183, 183);
+}
+
+.greetings button {
+  border: 2px solid white;
+  border-radius: 10px;
+  background: none;
+  color: white;
+  font-size: 40%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.toDoList {
+  padding-left: 0;
+}
+
+.toDoList li {
+  list-style: none;
+  font-family: "Comfortaa", cursive;
+  font-size: 20px;
+  color: black;
+  display: flex;
+  padding: 10px 5px;
+}
+
+li input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+li input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}
+
+li span {
+  padding: 0px 5px;
+}
+
+li button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.weather {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  font-family: "Comfortaa", cursive;
+  font-weight: 600;
+  font-size: 120%;
+}
